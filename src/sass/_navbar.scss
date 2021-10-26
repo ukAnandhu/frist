@@ -1,0 +1,59 @@
+.navbar {   
+    height: 66px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 1px 0 grey;
+    @media (max-width: '900px') {
+        height: 52px;
+    }
+    
+ &-container {
+        width: 83%;
+        height: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        @media (max-width: '900px') {
+            width: 90%;
+            height: 100%;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+ }
+ &__container {
+    grid-column: 2/11;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    @media (max-width: '900px') {
+        height: 72%;
+        grid-column: 2/5;
+        & p {
+        margin-left: 27px;
+        }
+    }
+ }
+ &__football {
+     grid-column: 1/2;
+     height: 97%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-bottom: 3px solid #161b46;
+     font-size: 18px;
+     font-weight: 600;
+     color: #161b46;
+     @media (max-width: '900px') {
+         height: 72%;
+         font-size: 16px;
+     }
+ }
+&__sports {
+    font-size: 18px;
+    font-weight: normal;
+    color: #635a6b;
+   @media (max-width: '900px') {
+       font-size: 15px;
+   }
+}
+}

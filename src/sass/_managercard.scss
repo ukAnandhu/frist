@@ -1,0 +1,35 @@
+.manager {
+    width: 47%;
+    height: 70px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+   
+    border-radius: 8px;
+    background-color: #f6f6f6;
+    @media (max-width: '900px') {
+        width: 98%;
+        height: 61px;
+        
+       // justify-content: center;
+    }
+    &__head {
+        font-size: 14px;
+        font-weight: 600;
+        color: #635a6b;
+        @media (max-width: '900px') {
+            font-size: 12px;
+        }
+       
+    }
+    &__text {
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+        bottom: 30px;
+        @media (max-width: '900px') {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    }
+}

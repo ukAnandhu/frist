@@ -1,0 +1,103 @@
+.card {
+    height: 190px;
+    border-radius: 10px;
+    display: flex;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px #8787871a;
+    @media (max-width: '900px') {
+        height: 112px;
+        margin-bottom: 20px;
+    }
+    &__pic {
+         border-radius: 10px;
+         background-color: #f5f6ff;
+         
+         @media (max-width: '900px') {
+            margin-top: 10px;
+            height: 100px;
+            width: 75px;
+            & img {
+                height: 86px;
+                width: 75px;
+           }
+        }
+    }
+    &__container {
+        height: 100%;
+        width: 100%;
+        margin-left: 20px;
+        margin-top: 10px;
+        @media (max-width: '900px') {
+            margin-top: 0px;
+            margin-left: 10px;
+            height: 100%;
+        }
+    }
+    
+    &__name {
+        font-size: 30px;
+        font-weight: 600;
+        color: #161b46;
+        @media (max-width: '900px') {
+            font-size: 18px;
+            
+        }
+       
+        &--inner {
+            font-size: 16px;
+            font-weight: 600;
+            color: #625a6b;
+            @media (max-width: '900px') {
+              font-size: 14px;
+            }
+        }
+    }
+    &__details {
+        width: 70%;
+        margin-top: -25px;
+        display: flex;
+        justify-content: space-between;
+        &--inner {
+            display: flex;
+            align-items: center;
+            margin-top: -20px;       
+        }
+        &--text {
+            font-size: 18px;
+            font-weight: 600;
+            color: #3e3744;
+            padding-left: 8px;
+            @media (max-width: '900px') {
+                font-size: 14px
+            }
+        }
+        &--heading {
+            font-size: 14px;
+            font-weight: 600;
+            color: #635a6b;
+           
+        }
+        &--hading {
+            @media (max-width: '900px') {
+                display: none;
+            }
+        }
+    }
+   
+}
+.mobile-visible {
+    @media (max-width: '900px') {
+        
+        display: flex;
+       position: relative;
+       top: 30px;
+       
+    }
+}
+.mobile-hidden {
+    @media (max-width: '900px') {
+        display: none;
+    }
+}

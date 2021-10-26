@@ -1,0 +1,52 @@
+
+.score {
+    height: 69px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 12px;
+    background-color: #fff;
+    border-radius: 8px;
+    
+      @media (max-width: '900px') {
+          height: 57px;
+      }
+    
+    &__team {
+        display: flex;
+        align-items: center;
+        &--name {
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #3e3744;
+        }
+        & img {
+            @media (max-width: '900px') {
+                display: none;
+            }
+        }
+    }
+    &__score {
+        display: flex;
+        align-items: center;
+        & span {
+            margin-left: 10px;
+        }
+        &--number {
+            font-size: 22px;
+            font-weight: 600;
+            color: #372546;
+        }
+        &--ft {
+            font-size: 14px;
+            font-weight: 600;
+            color: #949292;
+        }
+    }
+   
+}
+.mob {
+    display: none;
+}

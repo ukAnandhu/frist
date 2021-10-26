@@ -1,0 +1,53 @@
+.careercard {
+    height: 90px;
+   // border: 1px solid green;
+    width: 95%;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: #f6f6f6;
+    margin-bottom: 17px;
+    @media (max-width: '900px') {
+        height: 72px;
+        margin-bottom: 15px;
+    }
+    &__club {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        @media (max-width:'900px') {
+           margin-left: 10px;
+        }
+       
+    }
+    &__date {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 30px;
+        &--text {
+            font-size: 18px;
+            color: #767379;
+            font-weight: 600;
+        }
+        @media (max-width: '900px') {
+    
+           margin-left: -14px;      
+           &--text {
+               font-size: 15px;
+           }
+        }
+    }
+    &__liverpool {
+        font-size: 18px;
+        font-weight: 600;
+        color: #161b46;
+        padding-left: 10px;
+        @media (max-width: '900px') {
+            font-size: 16px;
+        }
+    }
+    & span {
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,32 @@
+.mobilematch {
+    height: 30%;
+    width: 97%;
+
+    &__date {
+        width: 100%;
+        font-size: 14px;
+        color: white;
+        height: 39px;
+        margin-top: 20px;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        background-color: #1e2352;
+    }
+    &__league {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    &__text {
+        font-size: 14px;
+        padding-left: 8px;
+        color: white;
+    }
+    &__visible {
+        width: 97%;
+        margin-left: 10px;
+        margin-bottom: 13px;
+    }
+}

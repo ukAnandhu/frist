@@ -1,0 +1,80 @@
+.stat {
+    height: 30%;
+    padding: 10px;
+    margin-top: 10px;
+    &__header {
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 0px;
+        color: #161b46;
+    }
+    &__team {
+
+        height: 57px;
+        display: flex;
+        border-radius: 8px;
+        justify-content: space-around;
+        //border: 2px solid red;
+        background-color: #F6F6F6;
+        &--inner {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: space-evenly;
+        }
+        &--utd {
+            width: 25px;
+        }
+    }
+    &__name {
+        font-size: 16px;
+        color: #161b46;
+        font-weight: 600;
+    }
+    &__shot {
+        font-size: 16px;
+        text-align: center;
+        color: #161b46;
+        font-weight: 600;
+    }
+    &__kick {
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    &__text{
+        font-size: 16px;
+        margin-bottom: 5px;
+        
+    }
+    &__line {
+        width: 90%;
+        height: 10px;
+        margin: 0px auto;  
+        display: flex;
+        
+        border-radius: 100px;
+        background-color:  #ededed;
+    }
+    &__white {
+        width: 40%;
+        background-color: #15be36;
+        border-radius: 0px 100px 100px 0px ;
+         &--small {
+             width: 10%;
+            
+             
+         }
+         &--big {
+             width: 20%;
+            
+         }
+    }
+    &__blue {
+        width: 30%;
+        background-color: #161b46;
+        border-radius: 100px 0px 0px 100px ;
+    }
+}

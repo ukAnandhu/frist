@@ -1,0 +1,29 @@
+.career {
+    height: 596px;
+    box-shadow: 0px 4px 12px #8787871a;
+    padding: 10px 10px 10px;
+    background-color: #fff;
+     border-radius: 8px;
+    @media (max-width: '900px') {
+        height: 385px;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+    &__card {
+        height: 90px;
+        width: 100%;
+        @media (max-width: '900px') {
+            height: 69px;
+           
+        }
+    }
+    &__header {
+        font-size: 22px;
+        font-weight: 600;
+        color: #161b46;
+        @media (max-width: '900px') {
+            font-size: 18px;
+        }
+    }
+
+}

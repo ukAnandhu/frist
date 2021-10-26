@@ -1,0 +1,119 @@
+.header {
+    background-color: #161b46;
+    height: 100px;
+    
+    &-container {
+        width: 83%;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        column-gap: 14px;
+        margin: 0 auto;
+        height: 100%;
+        max-width: 1400px;
+        overflow: hidden;
+        @media (max-width: '900px') {
+            width: 90%;
+            margin: 0 auto;
+            //display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            column-gap: 0;
+           
+        }
+       
+    }
+    &__soccer-container {
+        grid-column: 1/4;
+        display: flex;
+        align-items: center;
+        @media (max-width: '900px') {
+            grid-column: 1/2;
+        }
+    }
+    &__soccer {
+       
+        font-size: 25px;
+        font-weight: 600;
+        padding-left: 10px;
+        color: white;
+        @media (max-width: '900px') {
+            display: none;
+        }
+    }
+    &__search-icon {
+        
+         position: absolute;
+         top: 40%;
+         left: 8px;
+    }
+    &__search-container {
+        grid-column: 4/8;
+        display: flex;
+        align-items: center;
+        position: relative;
+        @media (max-width: '900px') {
+            grid-column: 2/6;
+    
+        }
+          
+    }
+    &__search {
+        height: 40%;
+        width: 100%;
+        border: none;
+        color: white;
+        background-color: #202555;
+        border-radius: 10px;
+        padding-left: 35px;
+       
+        &::placeholder {
+            color: white; 
+            font-size: 16px;
+            font-weight: 600;
+            
+        }
+        @media (max-width: '900px') {
+            height: 40px;
+            
+            &::placeholder {
+                font-size: 15px;
+                font-weight: 600;
+                color: white;
+            }
+        }
+    }
+    &__notification {
+        grid-column: 9/11;
+        
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+         position: relative;
+        //align-items: center;
+        @media (max-width: '900px') {
+            display: none;
+        }
+        &-bell {
+            position: absolute;
+            top: 42%;
+            left: 45px;
+        }
+    } 
+    &__notifivation-container {
+
+        border-radius: 100px;
+        width: 90%;
+        height: 40%;
+        display: flex;
+        background-color: #202555;
+        align-items: center;
+        justify-content: center;
+    }
+    &__not {
+       
+        color: white;
+        //padding-left: 45px;
+        font-size: 20px;
+        font-weight: 600;
+
+    }
+}

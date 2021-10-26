@@ -1,0 +1,37 @@
+.info {
+    height: 240px;
+    padding: 0 20px 10px ;
+   // border: 1px solid red;
+    border-radius: 8px;
+    background-color: #fff;
+    @media (max-width: '900px') {
+        height: 351px;
+       
+    }
+    &__items {
+        width: 100%;
+        height: 80%;
+        
+        display: flex;
+        flex-direction: column;
+        //justify-content: space-between;
+        gap: 15px;
+        flex-wrap: wrap;
+        @media (max-width: '900px') {
+           // width: 310px;
+            display: flex;  
+            height: 90%;
+            // flex-direction: column;
+            // flex-wrap: nowrap;
+        }
+    }
+    &__header {
+        font-size: 22px;
+        font-weight: 600;
+        color: #161b46;
+        @media (max-width: '900px') {
+            font-size: 18px;
+        }
+    }
+  
+}
